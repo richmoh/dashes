@@ -24,10 +24,7 @@ http.createServer(function (req, response) {
     
   response.writeHead(200, {'Content-Type': 'text/html'});
   
-  
-  
-  http.get("http://www.google.com/index.html", function(res) {
-      console.log(req.url);
+  console.log(req.url);
       
       var queryString = req.url;
       
@@ -53,13 +50,7 @@ http.createServer(function (req, response) {
       y = y[1]; 
       
       setPosition(response, x, y);
-
-
-        
       }
-  }).on('error', function(e) {
-    console.log("Got error: " + e.message);
-  });
   
   response.end('Yay!');
   
