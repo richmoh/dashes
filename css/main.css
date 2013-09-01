@@ -210,6 +210,24 @@ textarea {
     *zoom: 1;
 }
 
+#cursor
+{
+    background: url(../img/cursor.png);
+    height: 20px;
+    width: 20px;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1000000;
+    
+    pointer-events: none;
+}
+
+#control-area{
+    position: relative;
+}
+
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
